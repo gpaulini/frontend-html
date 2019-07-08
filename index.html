@@ -1,16 +1,92 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
+    <meta name="author" content="github.com/gpaulini">
+    <meta name="description" content="parte visual do topo de uma loja virtual">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Teste Frontend Moovin</title>
+    <!--bootstrapCSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Moovin</title>
-    <meta name="description" content="Moovin">
+    <link rel="stylesheet" href="./assets/css/main.css">
 </head>
-
 <body>
-    <!-- Write your code here -->
-</body>
+    
+    <header>
+        <div class="mv-top-bar">
+            <div class="container d-flex align-items-sm-center py-1">
+                <ul class="list-inline mb-0 d-flex justify-content-between d-sm-block col-12 col-sm-6 col-md-4 mv-list">
+                    <li class="list-inline-item mv-list-tem" title="Telefone">
+                        <img class="mv-icon" src="./assets/images/phone.png" alt="Telefone">
+                        (51) 9 9920 0350
+                    </li>
+                    <li class="list-inline-item mv-list-item" title="Whatsapp">
+                        <img class="mv-icon" src="./assets/images/whats.png" alt="Whatsapp">
+                        (51) 9 9920 0350
+                    </li>
+                </ul>
+                <ul class="list-inline mb-0 ml-auto d-none d-sm-block col-sm-6 col-md-8 text-sm-right text-uppercase mv-list">
+                    <li class="list-inline-item mr-md-3">
+                        <a href="#" class="mv-top-link">lista de desejos</a>
+                    </li>
+                    <li class="list-inline-item mr-md-3">
+                        <a href="#" class="mv-top-link">fale conosco</a>
+                    </li>
+                    <li class="list-inline-item mr-md-3">
+                        <a href="#" class="mv-top-link">trocas e devoluções</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light px-0">
+                <a href="#" class="navbar-brand text-center mr-0 col-12 col-md-4 col-lg-3">
+                    <img id="logo" src="./assets/images/logo.png" alt="Moovin">
+                </a>
+                <form class="form-inline px-0 col-12 col-sm-7 col-md-8 col-lg-5" method="get">
+                    <label for="search" class="position-relative w-100">
+                        <input id="search" class="form-control col-12" type="search" name="search" placeholder="O que você está procurando?" aria-label="Search">
+                        <button type="submit" class="btn mv-search-icon">
+                            <img src="./assets/images/search.png" alt="Procurar">
+                        </button>
+                    </label>
+                </form>
+                <ul class="nav flex-row justify-content-between col-12 col-sm-4 ml-md-auto col-lg-3">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mv-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Entrar</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Minha conta</a>
+                            <a class="dropdown-item" href="#">Meus pedidos</a>
+                            <a class="dropdown-item" href="#">Lista de desejos</a>
+                        </div>
+                    </li>
+                    <li class="nav-item d-inline-block">
+                        <a href="#" class="nav-link d-inline-block position-relative">
+                            <img src="./assets/images/cart.png" alt="Carrinho">
+                            <span class="mv-cart-qty">+50</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
+    <hr>
+    
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!--popperJS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <!--bootstrapJS-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script>
+        //ndv
+        if (575.9 < $(window).outerWidth() && 768 > $(window).outerWidth()) {
+            $('#logo').attr('src', './assets/images/logo@2x.png')
+        }
+    </script>
+</body>
 </html>

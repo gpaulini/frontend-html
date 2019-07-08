@@ -1,0 +1,41 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap);
+
+.inline-between {
+    text-align-last: justify;
+}
+
+.mv-top-bar {
+    background-color: #eeeeee;
+}
+
+.mv-top-bar .mv-list {
+    font-size: .75rem;
+}
+
+.mv-icon {
+    width: 15px;
+    height: 15px;
+}
+
+.mv-link, .mv-top-link {
+    color: #000;
+}
+
+.mv-search-icon {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.mv-cart-qty {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    padding: 2px;
+    font-size: 0.7rem;
+    border-radius: 50%;
+    background-color: #000000;
+    color: #fff;
+    font-weight: bold;
+}
